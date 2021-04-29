@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <title>School Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 offset-md-5">
+                    <a href="">
+                        <img src="./image/rio.jpeg" class="img-fluid" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="tables">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="descriptionTxt">
+                        <h1>Student Dashboard</h1>
+                        <p>Student lesson and exam schedule for teachers</p>
+                    </div>
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                                role="tab" aria-controls="nav-home" aria-selected="true">Lessons</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                                role="tab" aria-controls="nav-profile" aria-selected="false">Students</a>
+                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                                role="tab" aria-controls="nav-contact" aria-selected="false">Exams</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Number</th>
+                                        <th scope="col">Lesson name</th>
+                                        <th scope="col">Class number</th>
+                                        <th scope="col">Teacher name</th>
+                                        <th scope="col">Teacher surname</th>
+                                        <th scope="col">Edit/Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>Mathematics</td>
+                                        <td>10C</td>
+                                        <td>Ali</td>
+                                        <td>Alizada</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".bd-example-modal-lg">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>Mathematics</td>
+                                        <td>11A</td>
+                                        <td>Teymur</td>
+                                        <td>Nasirov</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".bd-example-modal-lg">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>Mathematics</td>
+                                        <td>9B</td>
+                                        <td>Qulam</td>
+                                        <td>Alisoy</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".bd-example-modal-lg">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>Mathematics</td>
+                                        <td>10C</td>
+                                        <td>Ali</td>
+                                        <td>Alizada</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".bd-example-modal-lg">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>Mathematics</td>
+                                        <td>11A</td>
+                                        <td>Teymur</td>
+                                        <td>Nasirov</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".bd-example-modal-lg">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>Mathematics</td>
+                                        <td>9B</td>
+                                        <td>Qulam</td>
+                                        <td>Alisoy</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".bd-example-modal-lg">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>Mathematics</td>
+                                        <td>10C</td>
+                                        <td>Ali</td>
+                                        <td>Alizada</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".bd-example-modal-lg">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>Mathematics</td>
+                                        <td>11A</td>
+                                        <td>Teymur</td>
+                                        <td>Nasirov</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".bd-example-modal-lg">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>Mathematics</td>
+                                        <td>9B</td>
+                                        <td>Qulam</td>
+                                        <td>Alisoy</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".bd-example-modal-lg">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>Mathematics</td>
+                                        <td>10C</td>
+                                        <td>Ali</td>
+                                        <td>Alizada</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".bd-example-modal-lg">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="addBtn">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal1">+ Add new lesson</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Number</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Surname</th>
+                                        <th scope="col">Class</th>
+                                        <th scope="col">Edit/Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>Ali</td>
+                                        <td>Alizada</td>
+                                        <td>10C</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".modal2">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>Teymur</td>
+                                        <td>Nasirov</td>
+                                        <td>11A</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".modal2">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>Qulam</td>
+                                        <td>Alisoy</td>
+                                        <td>9B</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".modal2">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>Ali</td>
+                                        <td>Alizada</td>
+                                        <td>10C</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".modal2">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>Teymur</td>
+                                        <td>Nasirov</td>
+                                        <td>11A</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".modal2">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>Qulam</td>
+                                        <td>Alisoy</td>
+                                        <td>9B</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".modal2">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>Ali</td>
+                                        <td>Alizada</td>
+                                        <td>10C</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".modal2">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>Teymur</td>
+                                        <td>Nasirov</td>
+                                        <td>11A</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".modal2">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>Qulam</td>
+                                        <td>Alisoy</td>
+                                        <td>9B</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".modal2">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>Ali</td>
+                                        <td>Alizada</td>
+                                        <td>10C</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".modal2">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="addBtn">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal3">+ Add new studnt</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Lesson code</th>
+                                        <th scope="col">Student Number</th>
+                                        <th scope="col">Exam date</th>
+                                        <th scope="col">Value</th>
+                                        <th scope="col">Edit/Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>0000</td>
+                                        <td>04.05.2020</td>
+                                        <td>5</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".modal4">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>0000</td>
+                                        <td>04.05.2020</td>
+                                        <td>5</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".modal4">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>0000</td>
+                                        <td>04.05.2020</td>
+                                        <td>5</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".modal4">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>0000</td>
+                                        <td>04.05.2020</td>
+                                        <td>5</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".modal4">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>0000</td>
+                                        <td>04.05.2020</td>
+                                        <td>5</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".modal4">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>0000</td>
+                                        <td>04.05.2020</td>
+                                        <td>5</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".modal4">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>0000</td>
+                                        <td>04.05.2020</td>
+                                        <td>5</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".modal4">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>0000</td>
+                                        <td>04.05.2020</td>
+                                        <td>5</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".modal4">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>0000</td>
+                                        <td>04.05.2020</td>
+                                        <td>5</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".modal4">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>0000</td>
+                                        <td>04.05.2020</td>
+                                        <td>5</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target=".modal4">Edit</button>
+                                            <button type="button" class="btn btn-secondary">Delete</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="addBtn">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal5">+ Add new exam</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Lesson edit</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="">Lesson code</label>
+                                    <input value="0000" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="">Lesson name</label>
+                                    <input value="Mathematics" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="">Class number</label>
+                                    <input value="10C" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="">Teacher name</label>
+                                    <input value="Ali" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="">Teacher surname</label>
+                                    <input value="Alizada" type="text">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modal1 " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Add new lesson</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label  for="">Lesson code</label>
+                                    <input placeholder="Type here" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <label  for="">Lesson name</label>
+                                    <input placeholder="Type here" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <label  for="">Class number</label>
+                                    <input placeholder="Type here" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <label  for="">Teacher name</label>
+                                    <input placeholder="Type here" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <label  for="">Teacher surname</label>
+                                    <input placeholder="Type here" type="text">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modal2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Student edit</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="">Number</label>
+                                    <input value="0000" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="">Name</label>
+                                    <input value="Ali" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="">Surname</label>
+                                    <input value="Alizada" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="">Class</label>
+                                    <input value="10C" type="text">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modal3 " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Add new studnt</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label  for="">Number</label>
+                                    <input placeholder="Type here" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <label  for="">Name</label>
+                                    <input placeholder="Type here" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <label  for="">Surname</label>
+                                    <input placeholder="Type here" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <label  for="">Class number</label>
+                                    <input placeholder="Type here" type="text">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modal4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">  
+                        <h5 class="modal-title" id="exampleModalLongTitle">Exam edit</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="">Lesson code</label>
+                                    <input value="0000" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="">Student number</label>
+                                    <input value="0000" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <label  for="">Exam date</label>
+                                    <input value="05/05/2021" type="date" >
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="">Value</label>
+                                    <input value="5" type="text">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modal5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">  
+                        <h5 class="modal-title" id="exampleModalLongTitle">Add new exam</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="">Lesson code</label>
+                                    <input placeholder="Type here" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="">Student number</label>
+                                    <input placeholder="Type here" type="text">
+                                </div>
+                                <div class="col-md-6">
+                                    <label  for="">Exam date</label>
+                                    <input placeholder="Type here" type="date" >
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="">Value</label>
+                                    <input placeholder="Type here" type="text">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+
+</html>

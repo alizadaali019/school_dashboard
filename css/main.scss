@@ -1,0 +1,128 @@
+$mainColor: #005ce6;
+
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    margin: 20px 0;
+}
+.kk{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
+.btn-primary{
+    background-color: $mainColor;
+    border-color: $mainColor;
+}
+.btn-secondary {
+    background-color: #e3e4e5;
+    border-color: #e3e4e5;
+    color: #4e4c4c;
+}
+#tables{
+    width: 100%;
+    margin: 50px 0;
+    .descriptionTxt{
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    nav{
+        .nav-tabs{
+            // border: none;
+            .nav-item{
+                color: black;
+                border: none;
+            }
+            .active{
+                border-bottom: 1px solid $mainColor;
+                background-color: $mainColor;  
+                color: white;  
+            }
+            .nav-link{
+                border-radius: 8px 8px 0 0;
+            }
+        }
+    }
+    .tab-content{
+        // margin-top: 20px;
+        @media screen and (max-width: 993px) {
+            overflow-y: scroll;
+        }
+        .tab-pane{
+            table{
+                border-right: 1px solid #dee2e6;
+                border-left: 1px solid #dee2e6;
+                border-bottom: 1px solid #dee2e6;
+                @media screen and (max-width: 993px) {
+                    width: 930px;
+                }
+                thead{
+                    tr{
+                        th{
+                            font-size: 15px;
+                            border-bottom: 1px solid #dee2e6;
+                            border-top: none;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        border-top: transparent;
+                        td{
+                            .btn-primary{
+                                margin-right: 10px;
+                            }
+                            button{
+                                padding: 5px 10px;
+                                font-weight: normal;
+                                font-size: 14px;
+                                border-radius: 8px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .addBtn{
+            float: right;
+            margin-top: 20px;
+            button{
+                border-radius: 8px;
+            }
+        }
+    }
+    .modal{
+        .modal-dialog{
+            .modal-content{
+                .modal-body{
+                    form{
+                        label{
+                            width: 100%;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #131313;
+                            margin-bottom: 8px;
+                        }
+                        input{
+                            width: 100%;
+                            // height: 56px;
+                            border-radius: 8px;
+                            border: 1px solid #e3e3e3;
+                            padding: 10px 15px;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+            .modal-footer{
+                button{
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}
